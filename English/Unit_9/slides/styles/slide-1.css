@@ -1,0 +1,143 @@
+#slide-1 {
+	background: var(--ink);
+}
+
+.subtext {
+	font-size: .8em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--gold);
+
+	margin: 1.2rem 0 1.2rem 0;
+}
+
+h1 {
+	font: 48px 'Playfair Display';
+	font-weight: 900;
+	text-align: center;
+}
+
+.gold-bar {
+	width: 120px;
+	height: 4px;
+
+	background: var(--gold);
+
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+
+	margin: 1.2em 0 1.2em 0;
+}
+
+.tag {
+	font-size: .8em;
+	text-align: center;
+	color: var(--silver);
+
+	margin: 1.2em 0 1.2em 0;
+}
+
+/* GOLD SHIMMER EFFECT */
+	.golden {
+		background: linear-gradient(120deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+		background-size: 200% auto;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: golden 0.67s linear infinite;
+	}
+
+	@keyframes golden {
+		from {
+			background-position: 0% center;
+		}
+
+		to {
+			background-position: 200% center;
+		}
+	}
+
+/* BACKGROUND EFFECT */
+	@property --rotation {
+		syntax: "<angle>";
+		inherits: false;
+		initial-value: 45deg;
+	}
+
+	@property --blur-strength {
+		syntax: "<length>";
+		inherits: false;
+		initial-value: 12rem;
+	}
+
+	.background-pattern {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+
+		background-image: conic-gradient(from var(--rotation), orange 0% , transparent 8%);
+		opacity: .7;
+		filter: blur(var(--blur-strength));
+		animation: blob-arround 12s linear infinite;
+	}
+
+	@keyframes blob-arround {
+		from {
+			--rotation: 0deg;
+			--blur-strength: 14rem;
+		}
+
+		to {
+			--rotation: 360deg;
+			--blur-strength: 16rem;
+		}
+	}
+
+/* MONEY RAIN EFFECT */
+	#money-rain {
+		position: absolute; inset: 0;
+		font-size: 10rem;
+		color: rgba(201,168,76,0.04);
+		display: flex; flex-wrap: wrap;
+		overflow: hidden;
+		pointer-events: none;
+		line-height: 1;
+		font-family: 'Playfair Display', serif;
+	}
+	.coin {
+		position: absolute;
+		width: 40px; height: 40px;
+		border-radius: 50%;
+		border: 2px solid var(--gold);
+		color: var(--gold);
+		font-family: 'Playfair Display', serif;
+		font-size: 1.1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		z-index: -1;
+		animation: fall linear infinite;
+	}
+	@keyframes fall {
+		0% {
+			opacity: 0;
+			transform: translateY(-60px) rotate(0deg);
+		}
+
+		10% {
+			opacity: 0.6;
+		}
+
+		90% { 
+			opacity: 0.4;
+		}
+
+		100% {
+			opacity: 0;
+			transform: translateY(100vh) rotate(360deg);
+		}
+	}
+
+/* EOF */

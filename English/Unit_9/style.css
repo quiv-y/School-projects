@@ -1,0 +1,93 @@
+/* VARIABLES */
+	:root {
+		--gold: #c9a84c;
+		--gold-light: #f0d080;
+		--gold-dark: #8a6a1f;
+		--ink: #0d0c11;
+		--cream: #f2efea;
+		--green-money: #1a3d2b;
+		--green-light: #2e6b4a;
+		--silver: #b0aeaa;
+	}
+
+/* BASE STUFF */
+	* {
+		margin: 0;
+		padding: 0;
+
+		pointer-events: none;
+		user-select: none;
+	}
+
+	body {
+		font: 1.2rem 'DM-Sans', sans-serif;
+
+		overflow: hidden;
+		background: var(--ink);
+		color: var(--cream);
+	}
+
+/* SLIDE ENGINE */
+	.slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		min-height: 100vh;
+		min-width: 100vw;
+		
+		opacity: 0;
+		transition: opacity .7s ease;
+	}
+
+	.slide.active {
+		opacity: 1;
+	}
+
+/*SLIDE ANIMATIONS*/
+	.slide > * {
+		transform: translateY(12px);
+		transition: transform .7s ease;
+	}
+
+	.slide.active > * {
+		transform: translateY(0);
+	}
+
+/* UI STUFF */
+	#progress-bar::before {
+		content: '';
+
+		width: 105%;
+		height: 100%;
+		background: var(--gold);
+		position: absolute;
+
+		filter: blur(1.2rem);
+
+		z-index: 999;
+
+		transition: all .7s ease;
+	}
+	#progress-bar {
+		width: 100%;
+		height: 4px;
+
+		background: var(--gold);
+		position: absolute;
+		bottom: 0;
+
+		z-index: 999;
+
+		transition: all .7s ease;
+	}
+
+	#slide-counter {
+		font: 11px 'Playfair Display', sans-serif;
+		position: absolute;
+		bottom: 1.2em;
+		right: .8em;
+		color: var(--silver);
+
+		z-index: 999;
+	}
