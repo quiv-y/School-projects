@@ -27,3 +27,5 @@ document.addEventListener('keydown', e => {
     if (e.key === 'ArrowUp') moveDot(Math.min(currentTlItemIndex + 1, tlItems.length - 1));
     if (e.key === 'ArrowDown')  moveDot(Math.max(currentTlItemIndex - 1, 0));
 });
+
+moveDot(0);
