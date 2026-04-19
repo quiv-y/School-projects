@@ -22,3 +22,5 @@ document.addEventListener('keydown', e => {
 		changeCard(-1);
 	}
 })
+
+showCard(0);
