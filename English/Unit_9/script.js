@@ -24,4 +24,4 @@ function showSlide(n) {
 	document.getElementById('slide-counter').textContent = (currentSlideIndex + 1) + ' / ' + slides.length;
 }
 
-showSlide(0);
+showSlide(1);

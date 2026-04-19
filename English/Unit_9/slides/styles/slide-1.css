@@ -6,8 +6,10 @@
 	font-size: .8em;
 	text-transform: uppercase;
 	text-align: center;
+	font-weight: 400;
 	color: var(--gold);
 
+	letter-spacing: 4px;
 	margin: 1.2rem 0 1.2rem 0;
 }
 
@@ -35,6 +37,8 @@ h1 {
 	text-align: center;
 	color: var(--silver);
 
+	letter-spacing: 2px;
+	font-weight: 400;
 	margin: 1.2em 0 1.2em 0;
 }
 
@@ -58,40 +62,38 @@ h1 {
 	}
 
 /* BACKGROUND EFFECT */
-	@property --rotation {
-		syntax: "<angle>";
-		inherits: false;
-		initial-value: 45deg;
-	}
-
-	@property --blur-strength {
-		syntax: "<length>";
-		inherits: false;
-		initial-value: 12rem;
-	}
-
-	.background-pattern {
-		position: absolute;
-		transform: translate(-50%, -50%);
-		width: 100%;
-		height: 100%;
-
-		background-image: conic-gradient(from var(--rotation), orange 0% , transparent 8%);
+	.background-blob {
+		width: 10em;
+		height: 10em;
+		position: fixed;
+		
+		filter: blur(11rem);
 		opacity: .7;
-		filter: blur(var(--blur-strength));
-		animation: blob-arround 12s linear infinite;
+		transform-origin: center center;
+
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+		offset-path: none;
 	}
 
-	@keyframes blob-arround {
-		from {
-			--rotation: 0deg;
-			--blur-strength: 14rem;
-		}
+	#blob-1 {
+		animation: orbit 16s linear infinite;
+		background: var(--gold-light);
+	}
 
-		to {
-			--rotation: 360deg;
-			--blur-strength: 16rem;
-		}
+	#blob-2 {
+		animation: orbit 16s linear infinite;
+		animation-delay: -8s;
+		background: var(--gold-dark);
+	}
+
+	@keyframes orbit {
+	    from {
+	    	transform: rotate(0deg) translateX(220%) rotate(0deg);
+	    }
+
+	    to   {
+	    	transform: rotate(360deg) translateX(220%) rotate(-360deg);
+	    }
 	}
 
 /* MONEY RAIN EFFECT */
@@ -105,6 +107,18 @@ h1 {
 		line-height: 1;
 		font-family: 'Playfair Display', serif;
 	}
+
+	.coin::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		opacity: .8;
+		filter: blur(3.4em);
+		background: var(--gold);
+		position: fixed;
+	}
+	
 	.coin {
 		position: absolute;
 		width: 40px; height: 40px;
