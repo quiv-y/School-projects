@@ -1,8 +1,31 @@
+#slide-3 {
+	flex-direction: column;
+}
+
+#slide-3 .unit {
+	margin-bottom: 2.6em;
+}
+
+#slide-3 .slide-title {
+	margin-bottom: 2.6em;
+}
 .timeline {
     position: relative;
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
+}
+
+.tl-arr {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #463b23;
+    rotate: 90deg;
+    position: absolute;
+    top: 2px;
+    right: -10px;	
 }
 
 .tl-progress {
