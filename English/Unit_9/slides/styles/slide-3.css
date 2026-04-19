@@ -1,4 +1,5 @@
 #slide-3 {
+	background: var(--ink);
 	flex-direction: column;
 }
 
@@ -94,6 +95,7 @@
     opacity: 0;
     transition: opacity 0.4s ease;
     padding: 0 0.5rem;
+    transition: opacity .4s ease;
 }
 
 .tl-item.active .tl-content {
@@ -117,6 +119,7 @@
     font-size: 1rem;
     color: var(--gold);
     font-weight: 700;
+    transition: opacity .4s ease;
 }
 
 .tl-event {
@@ -124,6 +127,7 @@
     font-weight: 500;
     color: var(--cream);
     margin-top: 0.2rem;
+    transition: opacity .4s ease;
 }
 
 .tl-body {
@@ -131,4 +135,5 @@
     color: var(--silver);
     line-height: 1.4;
     margin-top: 0.3rem;
+    transition: opacity .4s ease;
 }

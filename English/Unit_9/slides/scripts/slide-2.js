@@ -15,10 +15,10 @@ function showCard(n) {
 }
 
 document.addEventListener('keydown', e => {
-	if (e.key === 'ArrowUp') {
+	if (e.key === 'ArrowUp' && currentSlideIndex == 1) {
 		changeCard(1);
 	}
-	if (e.key === 'ArrowDown') {
+	if (e.key === 'ArrowDown'  && currentSlideIndex == 1) {
 		changeCard(-1);
 	}
 })

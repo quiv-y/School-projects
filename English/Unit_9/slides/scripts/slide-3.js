@@ -24,8 +24,10 @@ function moveDot(index) {
 
 
 document.addEventListener('keydown', e => {
-    if (e.key === 'ArrowUp') moveDot(Math.min(currentTlItemIndex + 1, tlItems.length - 1));
-    if (e.key === 'ArrowDown')  moveDot(Math.max(currentTlItemIndex - 1, 0));
+    if (e.key === 'ArrowUp' && currentSlideIndex == 2) moveDot(Math.min(currentTlItemIndex + 1, tlItems.length - 1));
+    if (e.key === 'ArrowDown' && currentSlideIndex == 2)  moveDot(Math.max(currentTlItemIndex - 1, 0));
 });
 
-moveDot(0);
+document.addEventListener('DOMContentLoaded', () => {
+    moveDot(0);
+});

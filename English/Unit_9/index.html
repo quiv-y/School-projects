@@ -26,115 +26,150 @@
 		<div id="progress-bar"></div>
 		<div id="slide-counter"></div>
 
-	<!-- SLIDE - 1: TITLE -->
-		<section id="slide-1" class="slide">
-			<div id="blob-1" class="background-blob"></div>
-			<div id="blob-2" class="background-blob"></div>
-			<div id="money-rain"></div>
+	<div class="transition-overlay" id="overlay"></div>
+	<div class="presentation" id="pres">
+		<!-- SLIDE - 1: TITLE -->
+			<section id="slide-1" class="slide">
+				<div id="blob-1" class="background-blob"></div>
+				<div id="blob-2" class="background-blob"></div>
+				<div id="money-rain"></div>
 
-			<div class="title-box-container">
-				<div class="subtext"> english presentation</div>
-				<h1> A World Full <br> <span class="golden">of Money</span></h1>
-				<div class="gold-bar"></div>
-				<div class="tag">Economics · Currency · Society · Future</div>
-			</div>
-		</section>
+				<div class="title-box-container">
+					<div class="subtext"> english presentation</div>
+					<h1> A World Full <br> <span class="golden">of Money</span></h1>
+					<div class="gold-bar"></div>
+					<div class="tag">Economics · Currency · Society · Future</div>
+				</div>
+			</section>
 
-	<!-- SLIDE - 2: INFO -->
-		<section id="slide-2" class="slide">
-			<div class="unit">unit 01</div>
-			<div class="background-light"></div>
-			<h2 class="slide-title">What is money,<br> and why money</h2>
-			<div class="card-holder">
-				<div class="card">
-					<h2 class="card-num">01</h2>
-					<h3 class="card-title">medium of exchange</h3>
-					<div class="card-body">Money replaces the barter system — instead of trading goods directly, we use a universal token everyone accepts.</div>
+		<!-- SLIDE - 2: INFO -->
+			<section id="slide-2" class="slide">
+				<div class="unit">unit 01</div>
+				<div class="background-light"></div>
+				<h2 class="slide-title">What is money,<br> and why money</h2>
+				<div class="card-holder">
+					<div class="card">
+						<h2 class="card-num">01</h2>
+						<h3 class="card-title">medium of exchange</h3>
+						<div class="card-body">Money replaces the barter system — instead of trading goods directly, we use a universal token everyone accepts.</div>
+					</div>
+					<div class="card">
+						<h2 class="card-num">02</h2>
+						<h3 class="card-title">store of value</h3>
+						<div class="card-body">Money holds worth over time. You can earn it today and spend it months or years from now.</div>
+					</div>
+					<div class="card">
+						<h2 class="card-num">03</h2>
+						<h3 class="card-title">unit of account</h3>
+						<div class="card-body">Money gives us a consistent way to measure and compare the value of completely different goods and services.</div>
+					</div>
 				</div>
-				<div class="card">
-					<h2 class="card-num">02</h2>
-					<h3 class="card-title">store of value</h3>
-					<div class="card-body">Money holds worth over time. You can earn it today and spend it months or years from now.</div>
-				</div>
-				<div class="card">
-					<h2 class="card-num">03</h2>
-					<h3 class="card-title">unit of account</h3>
-					<div class="card-body">Money gives us a consistent way to measure and compare the value of completely different goods and services.</div>
-				</div>
-			</div>
-		</section>
+			</section>
 
-	<!-- SLIDE - 3: TIMELINE -->
-		<section id="slide-3" class="slide">
-			<div class="unit">unit 02</div>
-			<h2 class="slide-title">A Brief History of Money</h2>
-			<div class="timeline">
-				<div class="tl-progress">
-					<div class="tl-progress-fill"></div>
-				</div>
-				<div class="tl-line">
-					<div class="tl-pos"></div>
-				</div>
-				<div class="tl-arr"></div>
+		<!-- SLIDE - 3: TIMELINE -->
+			<section id="slide-3" class="slide">
+				<div class="unit">unit 02</div>
+				<h2 class="slide-title">A Brief History of Money</h2>
+				<div class="timeline">
+					<div class="tl-progress">
+						<div class="tl-progress-fill"></div>
+					</div>
+					<div class="tl-line">
+						<div class="tl-pos"></div>
+					</div>
+					<div class="tl-arr"></div>
 
-				<!-- TIMELINE ITEMS -->
-					<div class="tl-items">
-						<div class="tl-item active" data-index="0">
-							<div class="tl-ghost-dot"></div>
+					<!-- TIMELINE ITEMS -->
+						<div class="tl-items">
+							<div class="tl-item active" data-index="0">
+								<div class="tl-ghost-dot"></div>
+							</div>
+				            <div class="tl-item" data-index="1">
+				                <div class="tl-ghost-dot"></div>
+				                <div class="tl-content">
+				                    <div class="tl-year">3000 BC</div>
+				                    <div class="tl-event">Barley & Silver</div>
+				                    <div class="tl-body">Ancient grain and weighed silver used as early currency.</div>
+				                </div>
+				            </div>
+				            <div class="tl-item" data-index="2">
+				                <div class="tl-ghost-dot"></div>
+				                <div class="tl-content">
+				                    <div class="tl-year">600 BC</div>
+				                    <div class="tl-event">First Coins</div>
+				                    <div class="tl-body">Lydia minted the first stamped electrum coins.</div>
+				                </div>
+				            </div>
+				            <div class="tl-item" data-index="3">
+				                <div class="tl-ghost-dot"></div>
+				                <div class="tl-content">
+				                    <div class="tl-year">800 AD</div>
+				                    <div class="tl-event">Paper Money</div>
+				                    <div class="tl-body">Tang Dynasty China introduced flying money receipts.</div>
+				                </div>
+				            </div>
+				            <div class="tl-item" data-index="4">
+				                <div class="tl-ghost-dot"></div>
+				                <div class="tl-content">
+				                    <div class="tl-year">1971</div>
+				                    <div class="tl-event">End of Gold Standard</div>
+				                    <div class="tl-body">Nixon decoupled the US dollar from gold.</div>
+				                </div>
+				            </div>
+				            <div class="tl-item" data-index="5">
+				                <div class="tl-ghost-dot"></div>
+				                <div class="tl-content">
+				                    <div class="tl-year">2009</div>
+				                    <div class="tl-event">Bitcoin</div>
+				                    <div class="tl-body">Satoshi Nakamoto launched the first cryptocurrency.</div>
+				                </div>
+				            </div>
+				
+				</div>
+			</section>
+
+		<!-- SLIDE - 4: NUMBERS -->
+			<section id="slide-4" class="slide">
+				<div class="unit">unit 03</div>
+				<h2 class="slide-title">Money by the numbers</h2>
+				<div class="fact-holder">
+					    <div class="fact">
+							<div class="fact-num" data-target="95" data-suffix="%">0%</div>
+							<div class="fact-title">of Money is Digital</div>
+							<div class="fact-body">Only about 5% of the world's money exists as physical cash. The rest lives in computers.</div>
 						</div>
-			            <div class="tl-item" data-index="1">
-			                <div class="tl-ghost-dot"></div>
-			                <div class="tl-content">
-			                    <div class="tl-year">3000 BC</div>
-			                    <div class="tl-event">Barley & Silver</div>
-			                    <div class="tl-body">Ancient grain and weighed silver used as early currency.</div>
-			                </div>
-			            </div>
-			            <div class="tl-item" data-index="2">
-			                <div class="tl-ghost-dot"></div>
-			                <div class="tl-content">
-			                    <div class="tl-year">600 BC</div>
-			                    <div class="tl-event">First Coins</div>
-			                    <div class="tl-body">Lydia minted the first stamped electrum coins.</div>
-			                </div>
-			            </div>
-			            <div class="tl-item" data-index="3">
-			                <div class="tl-ghost-dot"></div>
-			                <div class="tl-content">
-			                    <div class="tl-year">800 AD</div>
-			                    <div class="tl-event">Paper Money</div>
-			                    <div class="tl-body">Tang Dynasty China introduced flying money receipts.</div>
-			                </div>
-			            </div>
-			            <div class="tl-item" data-index="4">
-			                <div class="tl-ghost-dot"></div>
-			                <div class="tl-content">
-			                    <div class="tl-year">1971</div>
-			                    <div class="tl-event">End of Gold Standard</div>
-			                    <div class="tl-body">Nixon decoupled the US dollar from gold.</div>
-			                </div>
-			            </div>
-			            <div class="tl-item" data-index="5">
-			                <div class="tl-ghost-dot"></div>
-			                <div class="tl-content">
-			                    <div class="tl-year">2009</div>
-			                    <div class="tl-event">Bitcoin</div>
-			                    <div class="tl-body">Satoshi Nakamoto launched the first cryptocurrency.</div>
-			                </div>
-			            </div>
-			
-			</div>
-		</section>
 
-	<!-- SLIDE - 4: NUMBERS -->
-		<section id="slide-4" class="slide">
-			
-		</section>
+						<div class="fact">
+							<div class="fact-num" data-target="180" data-suffix="+">0+</div>
+							<div class="fact-title">currencies gloabally</div>
+							<div class="fact-body">The UN recognises 180 official currencies — from the US Dollar to the Bhutanese Ngultrum.</div>
+						</div>
 
-	<!-- SLIDE - X: TESTING -->
-		<section id="slide-X" class="slide">
-			
-		</section>
+						<div class="fact">
+							<div class="fact-num" data-target="2431.4" data-prefix="$" data-suffix="B">$0T</div>
+							<div class="fact-title">USD in circulation</div>
+							<div class="fact-body">The total amount of money circulating in the world economy exceeds one hundred trillion dollars.</div>
+						</div>
+
+						<div class="fact">
+							<div class="fact-num" data-target="560" data-suffix="M">0M</div>
+							<div class="fact-title">Crypto users</div>
+							<div class="fact-body">This is reflecting a significant increase in cryptocurrency adoption globally.</div>
+						</div>
+				</div>
+			</section>
+
+		<!-- SLIDE - 5: INEQUALITY -->
+			<section id="slide-5" class="slide">
+				
+			</section>
+
+		<!-- SLIDE - X: TESTING -->
+			<section id="slide-X" class="slide">
+				
+			</section>
+	</div>
+
 </body>
 
 <!-- SCRIPTS -->

@@ -23,11 +23,13 @@
 		font: 1.2rem 'DM-Sans', sans-serif;
 
 		overflow: hidden;
-		background: var(--ink);
 		color: var(--cream);
 	}
 
 	.unit {
+		position: absolute;
+		top: 30px;
+		left: 30px;
 		align-self: start;
 		margin: .2em .4em .1em 3.6em;
 		font-size: 11px;
@@ -37,6 +39,12 @@
 
 	}
 /* SLIDE ENGINE */
+	.presentation {
+		width: 100vw; height: 100vh;
+		position: relative;
+		overflow: hidden;
+	}
+
 	.slide {
 		display: flex;
 		justify-content: center;
@@ -49,24 +57,34 @@
 
 		height: 100vh;
 		width: 100vw;
-		
 		opacity: 0;
-		transition: opacity .7s ease;
+		animation: slideLeave .4s ease;
 	}
 
 	.slide.active {
 		opacity: 1;
+		animation: slideEnter .4s ease;
+	}
+
+	.transition-overlay {
+		position: fixed;
+		inset: 0;
+		background: #D4AF37;
+		z-index: 999;
+		transform: translateX(-100%);
 	}
 
 /*SLIDE ANIMATIONS*/
-	.slide > * {
-		transform: translateY(12px);
-		transition: transform .7s ease;
+	@keyframes slideEnter {
+		from { clip-path: inset(0 100% 0 0); }
+		to   { clip-path: inset(0 0% 0 0); }
 	}
 
-	.slide.active > * {
-		transform: translateY(0);
+	@keyframes slideLeave {
+		from { clip-path: inset(0 0% 0 0); }
+		to   { clip-path: inset(0 0 0 100%); }
 	}
+
 
 /* UI STUFF */
 	#progress-bar::before {

@@ -1,0 +1,49 @@
+#slide-4 {
+	background: var(--ink);
+	flex-direction: column;
+}
+
+.fact-holder {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+
+	gap: 4px;
+}
+
+.fact {
+	width: 200px;
+	height: 170px;
+
+	background: rgba(255,255,255,0.06);
+
+	border-color: var(--gold-light);
+	border-style: solid;
+	border-radius: 4px;
+	border-width: 1px 1px 1px 4px;
+
+	margin: .4em .8em .4em .8em;
+	padding: 6px;
+}
+
+.fact-num {
+	font: 32px 'Playfair Display';
+	color: var(--gold);
+	text-align: center;
+}
+
+.fact-title {
+	font-weight: 600;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+
+	margin: .8em 0 .8em 0;
+}
+
+.fact-body {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--silver);
+	text-align: center;
+}
