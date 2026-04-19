@@ -8,7 +8,7 @@
 	<title>The World of Money</title>
 
 	<!-- FONTS -->
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
 	<!-- EO FONTS -->
 
 	<!-- STYLES -->
@@ -17,6 +17,9 @@
 		<link rel="stylesheet" href="slides/styles/slide-2.css">
 		<link rel="stylesheet" href="slides/styles/slide-3.css">
 		<link rel="stylesheet" href="slides/styles/slide-4.css">
+		<link rel="stylesheet" href="slides/styles/slide-5.css">
+		<link rel="stylesheet" href="slides/styles/slide-6.css">
+		<link rel="stylesheet" href="slides/styles/slide-7.css">
 	<!-- EO STYLES -->
 
 </head>
@@ -28,6 +31,7 @@
 
 	<div class="transition-overlay" id="overlay"></div>
 	<div class="presentation" id="pres">
+
 		<!-- SLIDE - 1: TITLE -->
 			<section id="slide-1" class="slide">
 				<div id="blob-1" class="background-blob"></div>
@@ -44,20 +48,27 @@
 
 		<!-- SLIDE - 2: INFO -->
 			<section id="slide-2" class="slide">
-				<div class="unit">unit 01</div>
-				<div class="background-light"></div>
-				<h2 class="slide-title">What is money,<br> and why money</h2>
+
+				<div id="s2-header" class="slide-header">
+					<div id="s2-unit" class="slide-unit">unit 01</div>
+					<div id="s2-eyebrow" class="slide-eyebrow">Informations about money</div>
+					<div id="s2-title" class="slide-title">What is Money, and Why Money</div>
+				</div>
+
+				<div class="big-coin">$</div>
 				<div class="card-holder">
 					<div class="card">
 						<h2 class="card-num">01</h2>
 						<h3 class="card-title">medium of exchange</h3>
 						<div class="card-body">Money replaces the barter system — instead of trading goods directly, we use a universal token everyone accepts.</div>
 					</div>
+
 					<div class="card">
 						<h2 class="card-num">02</h2>
 						<h3 class="card-title">store of value</h3>
 						<div class="card-body">Money holds worth over time. You can earn it today and spend it months or years from now.</div>
 					</div>
+
 					<div class="card">
 						<h2 class="card-num">03</h2>
 						<h3 class="card-title">unit of account</h3>
@@ -68,8 +79,15 @@
 
 		<!-- SLIDE - 3: TIMELINE -->
 			<section id="slide-3" class="slide">
-				<div class="unit">unit 02</div>
-				<h2 class="slide-title">A Brief History of Money</h2>
+				<div id="s3-header" class="slide-header">
+					<div id="s2-unit" class="slide-unit">unit 02</div>
+					<div id="s2-eyebrow" class="slide-eyebrow">ORIGINS OF MONEY</div>
+					<div id="s2-title" class="slide-title">A Brief History of Money</div>
+				</div>
+
+				<div id="roof-glow"></div>
+				<div id="coin-pool"></div>
+
 				<div class="timeline">
 					<div class="tl-progress">
 						<div class="tl-progress-fill"></div>
@@ -130,8 +148,14 @@
 
 		<!-- SLIDE - 4: NUMBERS -->
 			<section id="slide-4" class="slide">
-				<div class="unit">unit 03</div>
-				<h2 class="slide-title">Money by the numbers</h2>
+				<div id="s4-header" class="slide-header">
+					<div id="s2-unit" class="slide-unit">unit 03</div>
+					<div id="s2-eyebrow" class="slide-eyebrow">MONEY STATISTICS</div>
+					<div id="s2-title" class="slide-title">Money by Numbers</div>
+				</div>
+
+				<div id="background-pattern"></div>
+
 				<div class="fact-holder">
 					    <div class="fact">
 							<div class="fact-num" data-target="95" data-suffix="%">0%</div>
@@ -161,12 +185,85 @@
 
 		<!-- SLIDE - 5: INEQUALITY -->
 			<section id="slide-5" class="slide">
-				
+				<div class="graph-pattern"></div>
+				<div class="panel">
+					<div id="s5-header" class="slide-header">
+						<div id="s2-unit" class="slide-unit">unit 04</div>
+						<div id="s2-eyebrow" class="slide-eyebrow">THE DISTRIBUTION OF WEALTH</div>
+						<div id="s2-title" class="slide-title">Who owns the <span class="golden">world's money </span> </div>
+					</div>
+
+					<div class="ieq-graph">
+						<div class="gp-item">
+							<div class="gp-title">Top 1%</div>
+							<div class="gp-bar"><div class="gp-fill" data-width="45"></div></div>
+							<div class="gp-pct">45%</div>
+						</div>
+
+						<div class="gp-item">
+							<div class="gp-title">Next 9%</div>
+							<div class="gp-bar"><div class="gp-fill" data-width="40"></div></div>
+							<div class="gp-pct">40%</div>
+						</div>
+
+						<div class="gp-item">
+							<div class="gp-title">Middle 40%</div>
+							<div class="gp-bar"><div class="gp-fill" data-width="13"></div></div>
+							<div class="gp-pct">13%</div>
+						</div>
+
+						<div class="gp-item">
+							<div class="gp-title">Lower 40%</div>
+							<div class="gp-bar"><div class="gp-fill" data-width="2"></div></div>
+							<div class="gp-pct">2%</div>
+						</div>
+
+						<div class="gp-item">
+							<div class="gp-title">Bottom 10%</div>
+							<div class="gp-bar"><div class="gp-fill" data-width="0.4"></div></div>
+							<div class="gp-pct">&lt;1%</div>
+						</div>
+					</div>
+					<div class="slide-source">Source: World Inequality Report — figures are approximate</div>
+				</div>
 			</section>
 
-		<!-- SLIDE - X: TESTING -->
-			<section id="slide-X" class="slide">
-				
+		<!-- SLIDE - 6: Quote -->
+			<section id="slide-6" class="slide">
+			  <div class="quote-body">
+
+			    <div class="quote-text">
+			      <span class="quote-mark open">"</span>
+			      <span id="quote-output"></span>
+			      <span class="quote-cursor" id="quote-cursor"></span>
+			      <span class="quote-mark close">"</span>
+			    </div>
+
+			    <div class="quote-author" id="quote-author">
+			      <div class="quote-author-line"></div>
+			      <div class="quote-author-name" id="quote-author-name"></div>
+			    </div>
+
+			  </div>
+			</section>
+
+		<!-- SLIDE 7: TY -->
+			<section id="slide-7" class="slide active">
+			  <div class="job-app"></div>
+			  <div id="ty-coins"></div>
+			 
+			  <div class="ty-corner tl"></div>
+			  <div class="ty-corner tr"></div>
+			  <div class="ty-corner bl"></div>
+			  <div class="ty-corner br"></div>
+			 
+			  <div class="ty-content">
+			    <div class="ty-eyebrow">Common Core · Economics</div>
+			    <div class="ty-heading">Thank You</div>
+			    <div class="ty-line"></div>
+			    <div class="ty-sub">A World Full of Money</div>
+			  </div>
+			 
 			</section>
 	</div>
 
@@ -178,6 +275,9 @@
 	<script src="slides/scripts/slide-2.js"></script>
 	<script src="slides/scripts/slide-3.js"></script>
 	<script src="slides/scripts/slide-4.js"></script>
+	<script src="slides/scripts/slide-5.js"></script>
+	<script src="slides/scripts/slide-6.js"></script>
+	<script src="slides/scripts/slide-7.js"></script>
 <!-- EO SCIPTS -->
 
 </html>

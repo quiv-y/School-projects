@@ -44,11 +44,11 @@ h1 {
 
 /* GOLD SHIMMER EFFECT */
 	.golden {
-		background: linear-gradient(120deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+		background: linear-gradient(120deg, #9A7D0A 0%, #F5D76E 45%, #D4AF37 65%, #9A7D0A 100%);;
 		background-size: 200% auto;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		animation: golden 0.67s linear infinite;
+		animation: golden 2s linear infinite;
 	}
 
 	@keyframes golden {
@@ -152,6 +152,10 @@ h1 {
 			opacity: 0;
 			transform: translateY(100vh) rotate(360deg);
 		}
+	}
+
+	#slide-1:not(.active) div[style*="fall"] {
+  		animation-play-state: paused;
 	}
 
 /* EOF */

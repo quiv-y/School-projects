@@ -1,4 +1,23 @@
 /* VARIABLES */
+	@font-face {
+	  font-family: 'Playfair Display';
+	  src: url('fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+	  font-weight: 100 900;
+	  font-style: italic;
+	}
+	@font-face {
+	  font-family: 'Playfair Display';
+	  src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+	  font-weight: 100 900;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'DM Sans';
+	  src: url('fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+	  font-weight: 100 900;
+	  font-style: normal;
+	}
+
 	:root {
 		--gold: #c9a84c;
 		--gold-light: #f0d080;
@@ -26,18 +45,53 @@
 		color: var(--cream);
 	}
 
-	.unit {
-		position: absolute;
-		top: 30px;
-		left: 30px;
-		align-self: start;
-		margin: .2em .4em .1em 3.6em;
-		font-size: 11px;
-		font-weight: 400;
-		text-transform: uppercase;
-		color: var(--gold);
+/* SHARED STUFF */
+	.slide-header {
 
 	}
+
+	.slide-unit {
+		color: var(--gold);
+		text-transform: uppercase;
+		font-size: 10px;
+		text-shadow: 0 0 2px var(--gold);
+
+		position: absolute;
+		top: 12px;
+		left: 18px;
+		letter-spacing: 1px;
+	}
+
+	.slide-eyebrow {
+		color: var(--gold-dark);
+		align-self: flex-start;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		font-weight: 300;
+		font-size: 11px;
+		margin-bottom: 12px;
+	}
+
+	.slide-title {
+		font: 32px 'Playfair Display';
+		font-weight: 600;
+
+		margin: 8px 0 12px 0;
+	}
+
+	.slide-source {
+		font-size: 6px;
+		font-weight: 300;
+
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: var(--silver);
+
+		margin-top: 10.6em;
+		bottom: 0px;
+	}
+
 /* SLIDE ENGINE */
 	.presentation {
 		width: 100vw; height: 100vh;
@@ -85,7 +139,6 @@
 		to   { clip-path: inset(0 0 0 100%); }
 	}
 
-
 /* UI STUFF */
 	#progress-bar::before {
 		content: '';
@@ -123,5 +176,23 @@
 		letter-spacing: 2px;
 		z-index: 999;
 	}
+
+.job-app {
+	width: 100%;
+	height: 100%;
+	background: black;
+	background-image: url(imgs/job-app.jpg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	opacity: 0;
+}
+.show {
+	opacity: 1;
+}
 
 /* EOF */
