@@ -4,7 +4,6 @@ function runTySlide() {
 }
  
 function resetTySlide() {
-  document.getElementById('slide-7').classList.remove('active');
   document.getElementById('ty-coins').innerHTML = '';
 }
  

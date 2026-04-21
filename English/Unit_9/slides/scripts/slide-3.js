@@ -17,7 +17,10 @@ function moveDot(index) {
   }
 
   currentTlItemIndex = index;
-  tlItems[currentTlItemIndex].classList.remove('activated');
+  setTimeout(() => {
+    tlItems[currentTlItemIndex].classList.remove('activated');
+  }, 500);
+
   tlItems[currentTlItemIndex].classList.add('active');
 
   const ghost = tlItems[index].querySelector('.tl-ghost-dot');

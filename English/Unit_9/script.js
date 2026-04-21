@@ -105,5 +105,5 @@ function showSlide(n) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  showSlide(6);
+  showSlide(0);
 });
