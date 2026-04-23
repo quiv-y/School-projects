@@ -7,14 +7,7 @@ const memeQuotes = [
   "Life is like a Dick. And kids only make it harder.",
 ]
 
-const memeTy = [
-  "No Fuck You!",
-  "Job Application!",
-  "Guess What",
-]
-
 let currentMemeQuoteIndex = 0;
-let currentMemeTyIndex = 0;
 
 document.addEventListener('keydown', e => {
 	if (e.key === 'ArrowLeft') {
@@ -37,23 +30,6 @@ document.addEventListener('keydown', e => {
       resetQuoteSlide()
       setTimeout(runQuoteSlide, 700);
   }
-  if (e.key === 'm' && currentSlideIndex == 6) {
-      currentMemeTyIndex = (currentMemeTyIndex + 1) % memeTy.length;
-      document.querySelector(".ty-heading").textContent = memeTy[currentMemeTyIndex];
-      if (currentMemeTyIndex == 1) {
-        setTimeout(function() {document.querySelector(".job-app").classList.add("show")}, 600);
-      } else {
-        document.querySelector(".job-app").classList.remove("show");    
-      }
-
-
-  }
-  if (e.key === 'M' && currentSlideIndex == 6) {
-      document.querySelector(".ty-heading").textContent = "Thank You!";
-      currentMemeTyIndex = 0;
-  }
-
-
 });
 
 const slides = document.querySelectorAll('.slide')
