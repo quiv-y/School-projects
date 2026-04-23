@@ -47,7 +47,7 @@
 
 /* SHARED STUFF */
 	.slide-header {
-
+		z-index: 1;
 	}
 
 	.slide-unit {

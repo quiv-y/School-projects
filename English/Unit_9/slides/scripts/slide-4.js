@@ -30,15 +30,13 @@ function runFactSlide() {
   const slide = document.getElementById('slide-4');
  
  
-  document.querySelectorAll('#slide-4 .fact-num').forEach((el, i) => {
+  document.querySelectorAll('.fact-num').forEach((el, i) => {
     setTimeout(() => countUp(el), i * 120 + 300);
   });
 }
 
 function resetFactSlide() {
-  const slide = document.getElementById('slide-4');
-  slide.classList.remove('active');
-  document.querySelectorAll('#slide-4 .fact-num').forEach(el => {
+  document.querySelectorAll('.fact-num').forEach(el => {
     const prefix = el.dataset.prefix || '';
     const suffix = el.dataset.suffix || '';
     el.textContent = prefix + '0' + suffix;

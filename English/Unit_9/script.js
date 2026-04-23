@@ -1,15 +1,16 @@
 const memeQuotes = [
+  "I just molested a kid. In 10 years they will make a Google Doc about it, or even a Netflix Documentary.",
   "I missed slavery. It was my favourite periode.",
   "P. Diddy was a real homie. Too bad he got caught, at least I didn't",
   "Epstein was just molesting kids. Nothing too bad.",
   "Imagine the teacher seing this. At least she won't, right ?",
   "Life is like a Dick. And kids only make it harder.",
-  "I just molested a kid. In 10 years they will make a Google Doc about it, or even a Netflix Documentary."
 ]
 
 const memeTy = [
   "No Fuck You!",
-  "Job Application!"
+  "Job Application!",
+  "Guess What",
 ]
 
 let currentMemeQuoteIndex = 0;
@@ -73,20 +74,25 @@ function showSlide(n) {
     currentSlideIndex = (n + slides.length) % slides.length;
     slides[currentSlideIndex].classList.add('active');
     if (currentSlideIndex == 3) {
-      resetFactSlide
+      resetFactSlide()
       setTimeout(runFactSlide, 900);
     }
     if (currentSlideIndex == 4) {
       resetIneqSlide();
-      setTimeout(runIneqSlide(), 700);
-    }
-    if (currentSlideIndex == 5) {
-      resetQuoteSlide();
-      setTimeout(runQuoteSlide(), 700);
+      setTimeout(runIneqSlide, 700);
     }
     if (currentSlideIndex == 6) {
+      resetQuoteSlide();
+      setTimeout(runQuoteSlide, 700);
+    }
+    if (currentSlideIndex == 7) {
       resetTySlide();
       setTimeout(runTySlide, 700);
+    }
+    if (currentSlideIndex === 5) {
+      startHtemBg();
+    } else {
+      stopHtemBg();
     }
 
     const pct = ((currentSlideIndex + 1) / slides.length * 100).toFixed(0);
@@ -105,5 +111,5 @@ function showSlide(n) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  showSlide(0);
+  showSlide(5);
 });
