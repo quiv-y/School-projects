@@ -206,7 +206,18 @@
 	#ddornodd {
 		background-image: url(imgs/ddornodd.jpg);
 	}
-
+	#jeffinmaid {
+		background-image: url(imgs/jeffinm.jpg);
+	}
+	#nph {
+		background-image: url(imgs/nph.jpg);
+	}
+	#diddyHi {
+		background-image: url(imgs/diddyHi.webp);
+	}
+	#rock {
+		background-image: url(imgs/susrock.jpg);
+	}
 	.meme.meme-on {
 		opacity: 1;
 	}
