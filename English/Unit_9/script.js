@@ -7,6 +7,13 @@ const memeQuotes = [
   "Life is like a Dick. And kids only make it harder.",
 ]
 
+const authors = [
+  "Rayane Boutoughbine",
+  "Adam Sabir",
+  "Achraf Tahiri",
+  "Imran Amiri",
+]
+
 let currentMemeQuoteIndex = 0;
 
 document.addEventListener('keydown', e => {
@@ -16,15 +23,15 @@ document.addEventListener('keydown', e => {
 	if (e.key === 'ArrowRight') {
 		changeSlide(1);
 	}
-  if (e.key === 'm' && currentSlideIndex == 5) {
-      AUTHOR = "Achraf Tahiri"
+  if (e.key === 'm' && currentSlideIndex == 6) {
+      AUTHOR = authors[Math.floor(Math.random()*authors.length)];
       QUOTE = memeQuotes[currentMemeQuoteIndex];
       currentMemeQuoteIndex = (currentMemeQuoteIndex + 1) % memeQuotes.length;
 
       resetQuoteSlide()
-      setTimeout(runQuoteSlide, 200);
+      setTimeout(runQuoteSlide, 10);
   }
-  if (e.key === 'M' && currentSlideIndex == 5) {
+  if (e.key === 'M' && currentSlideIndex == 6) {
       AUTHOR = "Ayn Rand"
       QUOTE = "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver."
       resetQuoteSlide()
@@ -87,5 +94,5 @@ function showSlide(n) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  showSlide(5);
+  showSlide(0);
 });

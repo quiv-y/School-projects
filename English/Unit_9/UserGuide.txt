@@ -1,0 +1,28 @@
+1 = ash baby
+2 = tuff baby
+3 = shocked nigga
+4 = jeff x trump
+5 = diddy or diddy not
+6 = maid jeff
+7 = noob pro hacker
+8 = diddy goo goo
+9 = the hub
+0 = the rock
+- = buck tooth
+
+shift+1 = flashbang
+shift+2 = the hub
+shift+3 = vineboom
+shift+4 = french
+shift+5 = fart
+shift+6 = wow
+shift+7 = fahh
+shift+8 = goo goo
+
+arrow left = slide backward
+arrow right = slide forward
+arrow up = slide interact forward
+arrow down = slide interact backward
+
+m = change quote to meme quote
+shift+m = change meme quote to normal quote
