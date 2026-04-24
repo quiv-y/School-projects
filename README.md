@@ -10,4 +10,5 @@ This is where i store my school project files
 
 ##### Quote Slide:
 m: change quote to random meme quote.
+
 shift+m: change meme quote to quote.
