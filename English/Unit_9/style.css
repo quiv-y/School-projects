@@ -189,6 +189,7 @@
 		background-size: cover;
     	background-position: center;
     	opacity: 0;
+		background-size: 100% 100%;
 	}
 	#ashbaby {
 		background-image: url(imgs/ashbaby.jpg);
@@ -198,6 +199,12 @@
 	}	
 	#shockedngg {
 		background-image: url(imgs/shockedngg.jpg);
+	}	
+	#ext {
+		background-image: url(imgs/epsteinxtrump.jpg);
+	}
+	#ddornodd {
+		background-image: url(imgs/ddornodd.jpg);
 	}
 
 	.meme.meme-on {
