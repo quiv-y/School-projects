@@ -218,6 +218,9 @@
 	#rock {
 		background-image: url(imgs/susrock.jpg);
 	}
+	#buck {
+		background-image: url(imgs/buck.gif);
+	}
 	.meme.meme-on {
 		opacity: 1;
 	}

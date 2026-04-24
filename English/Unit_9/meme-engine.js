@@ -18,13 +18,14 @@ document.addEventListener('keydown', e => {
     if (e.key === '8') showMeme(document.getElementById('diddyHi'), 'goo');
     if (e.key === '9') showMeme(document.getElementById('hubVid'));
     if (e.key === '0') showMeme(document.getElementById('rock'), 'boom');
+    if (e.key === '-') showMeme(document.getElementById('buck'));
     if (e.key === 'x') showMeme(null);
 
     if (e.key === '!') playSound('fb');
     if (e.key === '@') playSound('hub');
     if (e.key === '#') playSound('boom');
-    if (e.key === '$') playSound(null);
-    if (e.key === '%') playSound(null);
+    if (e.key === '$') playSound('french');
+    if (e.key === '%') playSound('fart');
     if (e.key === '^') playSound('wow');
     if (e.key === '&') playSound('fahh');
     if (e.key === '*') playSound('goo');
